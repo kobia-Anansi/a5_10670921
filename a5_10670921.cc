@@ -4,7 +4,6 @@
 #include <vector>
 using namespace std;
 ofstream input;
-ifstream output;
 int IDnumber(int& id, int& femaleCount, int& maleCount, int& gen, vector<int>& v, int& i, int j){
   for(j=0; j<=i; j++ ){
     if(v[j]!=id && gen==77){
@@ -18,12 +17,6 @@ int IDnumber(int& id, int& femaleCount, int& maleCount, int& gen, vector<int>& v
     }
   }
 }
-output.open("student.txt");
-string line;
-while(getline(output, line)){
-  cout << line << endl;
-}
-output.close();
 int main(){
     int id; int age; double score; string firstname;  int total_score=0; int femaleCount;int j;
     char gender; char grade; int total_age=0; vector<int> v(5); int maleCount; int gen; string lastname;
